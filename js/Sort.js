@@ -1,10 +1,7 @@
 function updateContentByMonth() {
     const urlParams = new URLSearchParams(window.location.search);
     const month = urlParams.get('month');
-
-    console.log('Month:', month);
-
-    //display all if no month chosen
+    
     if (month == null) {
         displayAllPosts();
         return;
