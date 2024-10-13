@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education and Skills</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Slackside+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/MainFormat.css">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 501px) and (max-width: 768px)">
+    <link rel="stylesheet" href="css/Mobile.css" media="screen and (max-width: 500px)">
+    
+    <script src="js/Nav.js" defer></script>
+
+</head>
+<body>
+    <div class = "Container">
+        <!-- Navigation -->
+        <div class="Navigation">
+            <div class="MobileNavSymbol" onclick="OpenMenu();">
+                <img src="images/menu-icon.png" alt="Menu">
+            </div>
+            <h1 id="MobileHeader">M. A. Nelson</h1>
+            <img class = "Background" id="NavBG" src="images/Background.png">
+            <nav class = "Content" id = "NavOptions">
+                <ul>
+                    <li onclick="OpenMenu()"><a href="Homepage.html">Home</a></li>
+                    <li onclick="OpenMenu()"><a href="AboutMe.html">About Me</a></li>
+                    <li onclick="OpenMenu()"><a href="http://localhost/Project/Blog.php">Blog</a></li>
+                    <li onclick="OpenMenu()"><a href="Education_Experience_Skills.html#Education">Education</a></li>
+                    <li onclick="OpenMenu()"><a href="Education_Experience_Skills.html#Experience">Experience</a></li>
+                    <li onclick="OpenMenu()"><a href="Education_Experience_Skills.html#Skills">Skills</a></li>
+                    <li onclick="OpenMenu()"><a href="Projects.html">Projects</a></li>
+                    <li onclick="OpenMenu()"><a href="Homepage.html#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <!-- Main Information -->
+        <section class="MainContent"> 
+            <div class="xCards">
+                <!-- Education Page -->
+                <article id="Education" class ="Cards">
+                    <img class = "Background" src="images/Background.png">
+                    <header class="Content">
+                            <h1>Education</h1>
+                            <img src="images/ScrollR.png" alt="Scroll Right" class = "Right">
+                    </header>
+                    <article class="Content">
+                        <table>
+                            <caption>My Most Relevent Education</caption>
+                            <thead>
+                                <tr>
+                                    <th>Institute</th>
+                                    <th>Studied</th>
+                                    <th>Studying</th>
+                                </tr>
+                            <tbody>
+                                <tr>
+                                    <td>Queen Mary University 2023- Current</td>
+                                    <td>
+                                        <ul>
+                                            <li>Course: Computer Science</li>
+                                            <li>Completed Modules
+                                                <ul>
+                                                    <li>Procedural Programming</li>
+                                                    <li>Computer Systems and Networks</li>
+                                                    <li>Logic and Discrete Structures</li>
+                                                    <li>Professional and Research Practise</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Course: Computer Science</li>
+                                            <li>Current Modules
+                                                <ul>
+                                                    <li>Object Oriented Programming</li>
+                                                    <li>Fundamentals of Web Technology</li>
+                                                    <li>Automata and Formal Languages</li>
+                                                    <li>Information System Analysis</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                           </tbody>
+                        </table>
+                    </article>
+                    <footer>
+                        <p><i><small>Copyright &copy; 2024  M. A. Nelson</small></i></p>
+                    </footer>
+                </article>
+
+                <!-- Qualifications Page -->
+                <article id="Qualifications" class ="Cards">
+                    <img class = "Background" src="images/Background.png">
+                    <header class="Content">
+                            <h1>Qualifications</h1>
+                            <img src="images/ScrollR.png" alt="Scroll Right" class = "Right">
+                            <img src="images/ScrollL.png" alt="Scroll Left" class = "Left">
+                    </header>
+                    <article class="Content">
+                        <table>
+                            <caption>My Most Relevent Qualifications</caption>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="4">A-Levels</td>
+                                    <td>Computer Science</td>
+                                </tr>
+                                <tr>
+                                    <td>Further Mathematics</td>
+                                </tr>
+                                <tr>
+                                    <td>Mathematics</td>
+                                </tr>
+                                <tr>
+                                    <td>History</td>
+                                </tr>
+                                <tr>
+                                    <td>Level 2 Sport Leader Award</td>
+                                    <td>Awarded based on developing skills in leading group activities aimed at Sports Activities</td>
+                                </tr>
+                           </tbody>
+                        </table>
+                    </article>
+                    <footer>
+                        <p><i><small>Copyright &copy; 2024  M. A. Nelson</small></i></p>
+                    </footer>
+                </article>
+
+                <!-- Experience Page -->
+                <article id="Experience" class ="Cards">
+                    <img class = "Background" src="images/Background.png">
+                    <header class="Content">
+                            <h1>Experience</h1>
+                            <img src="images/ScrollR.png" alt="Scroll Right" class = "Right">
+                            <img src="images/ScrollL.png" alt="Scroll Left" class = "Left">
+                    </header>
+                    <article class="Content">
+                        <table>
+                            <caption>My Most Relevent Experiences</caption>
+                            <thead>
+                                <tr>
+                                    <th>Dates</th>
+                                    <th>Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>14/2/2022-17/02/2022</td>
+                                    <td>Online Work Experience at Cisco - Group Project presenting a proposol matching Cisco's Ethos</td>
+                                </tr>
+                                <tr>
+                                    <td>1/8/2022 -12/8/2022</td>
+                                    <td>Freelance at JellyJames Publishing - Creating Worksheets for Dyscalculia and Dyslexia, Genreal admin</td>
+                                </tr>
+                                <tr>
+                                    <td>In 2021</td>
+                                    <td>Volunteering at Primary School Tennis club - leading younger years activities</td>
+                                </tr>
+                           </tbody>
+                        </table>
+                    </article>
+                    <footer>
+                        <p><i><small>Copyright &copy; 2024  M. A. Nelson</small></i></p>
+                    </footer>
+                </article>
+
+                <!-- Skills Page -->
+                <article id="Skills" class ="Cards">
+                    <img class = "Background" src="images/Background.png">
+                    <header class="Content">
+                            <h1>Skills</h1>
+                            <img src="images/ScrollL.png" alt="Scroll Left" class = "Left">
+                    </header>
+                    <article class="Content">
+                        <table>
+                            <caption>My Most Relevent Skills</caption>
+                            <thead>
+                                <tr>
+                                    <th>Skills</th>
+                                    <th>Level</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>C#</td>
+                                    <td>Intermediate</td>
+                                </tr>
+                                <tr>
+                                    <td>Python</td>
+                                    <td>Intermediate</td>
+                                </tr>
+                                <tr>
+                                    <td>Java</td>
+                                    <td>Intermediate to Advanced</td>
+                                </tr>
+                                <tr>
+                                    <td>HTML</td>
+                                    <td>Intermediate</td>
+                                </tr>
+                                <tr>
+                                    <td>CSS</td>
+                                    <td>Intermediate</td>
+                                </tr>
+                                <tr>
+                                    <td>JavaScript</td>
+                                    <td>Basic</td>
+                                </tr>
+                                <tr>
+                                    <td>Sql</td>
+                                    <td>Intermediate</td>
+                                </tr>
+                           </tbody>
+                        </table>
+                    </article>
+                    <footer>
+                        <p><i><small>Copyright &copy; 2024  M. A. Nelson</small></i></p>
+                    </footer>
+                </article>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

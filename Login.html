@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Slackside+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/MainFormat.css">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 501px) and (max-width: 768px)">
+    <link rel="stylesheet" href="css/Mobile.css" media="screen and (max-width: 500px)">
+
+    <script src="js/Nav.js" defer></script>
+
+</head>
+<body>
+    <div class = "Container">
+        <!-- Navigation -->
+        <div class="Navigation">
+            <div class="MobileNavSymbol" onclick="OpenMenu();">
+                <img src="images/menu-icon.png" alt="Menu">
+            </div>
+            <h1 id="MobileHeader">M. A. Nelson</h1>
+            <img class = "Background" id="NavBG" src="images/Background.png">
+            <nav class = "Content" id = "NavOptions">
+                <ul>
+                    <li onclick="OpenMenu()"><a href="Homepage.html">Home</a></li>
+                    <li onclick="OpenMenu()"><a href="AboutMe.html">About Me</a></li>
+                    <li onclick="OpenMenu()"><a href="http://localhost/Project/Blog.php">Blog</a></li>
+                    <li onclick="OpenMenu()"><a href="Education_Experience_Skills.html#Education">Education</a></li>
+                    <li onclick="OpenMenu()"><a href="Education_Experience_Skills.html#Experience">Experience</a></li>
+                    <li onclick="OpenMenu()"><a href="Education_Experience_Skills.html#Skills">Skills</a></li>
+                    <li onclick="OpenMenu()"><a href="Projects.html">Projects</a></li>
+                    <li onclick="OpenMenu()"><a href="Homepage.html#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main Information -->
+        <section class="MainContent">
+            <img class = "Background" src="images/Background.png">
+            <header class="Content">
+                <h1>Login to Post</h1>
+            </header>
+
+            <form class="Content" id = "Login" method="POST" action="http://localhost/Project/login.php"> 
+                <fieldset>
+                    <h1><legend>Login</legend></h1>
+                    <p>
+                        <label>Email:</label>
+                        <input type="email" name="Email" id = "Email" placeholder="Email" class = "Input" required >
+                    </p>
+                    <p>
+                        <label>Password:</label>
+                        <input type="password" name="password" id = "password" placeholder="Password" class = "Input" required>
+                    </p>
+                    <p>
+                        <input type="submit" value="Login">
+                    </p>
+                </fieldset>
+            </form>
+
+            <footer>
+                <p><i><small>Copyright &copy; 2024 M. A. Nelson</small></i></p>
+            </footer>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,561 @@
+/* Background Formating */
+html
+{
+    scroll-padding-top: 9rem;
+}
+
+body{
+    background-color: rgb(47, 67, 50);
+    font-size: 1.2em;
+}
+
+/* WebSite Structure */
+.Container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation */
+.Navigation .Background
+{
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1030;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+}
+
+
+.MobileNavSymbol
+{
+    cursor: pointer;
+    display: flex;
+    width: 1.5rem;
+    margin: 0.3rem;
+    z-index: 1;
+}
+.MobileNavSymbol img
+{
+    width: 100%;
+}
+
+#MobileHeader
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Rock Salt, cursive;
+    color: white;
+    background-color: rgba(29, 71, 37, 0.6);
+}
+
+.Navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 1%;
+    z-index: 1;
+    overflow: hidden;
+    background-color: rgb(156, 161, 157);
+    margin: 0.5em;
+    border-radius: 1em;
+    padding: 0.75em;
+    margin-inline: 0;
+}
+
+nav
+{
+    display: none;
+    height: 100%;
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0.85em;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    text-align: center;
+    background-color: rgba(29, 71, 37, 0.6);
+    padding: 0.25em;
+    border-block: 0.1em solid white;
+}
+
+nav li a{
+    font-family: Lobster, cursive;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Content formatting */
+.MainContent{
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+    gap: 0.3em;
+    overflow-x: hidden;
+    padding: 0;
+    margin-top: 0;
+    margin-inline: 0.5em;
+
+}
+
+ .MainContent .Background
+{
+    position: absolute;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    height: 100%;
+} 
+
+.Content
+{
+    color: white;
+    font-family: Slackside One, cursive;
+    position: relative;
+}
+
+.Content p
+{
+    margin-top: 0.5em;
+    padding: 0.5em;
+    padding-block: 0.3em;
+    font-size: 1.5em;
+    background-color: rgba(29, 71, 37, 0.8);
+}
+
+.Content p small{
+    font-size: 0.4em;
+}
+
+.Content figure
+{
+    margin: 0;
+    position: absolute;
+    right: 1em;
+    bottom: -1.5em;
+    width: 15%;
+}
+
+.Content img
+{
+    width: 100%;
+}
+
+/* Headers */
+.MainContent header
+{
+    text-align: center;
+    font-family: Rock Salt, cursive;
+    font-size: 1.5em;
+    background-color: rgba(29, 71, 37, 0.6);
+    padding: 0.5em;
+    padding-bottom: 0;
+}
+
+/* Header Arrows */
+.MainContent header .Right
+{
+    display: none;
+    width: 4em;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.MainContent header .Left
+{
+    display: none;
+    width: 4em;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Footers */
+footer
+{
+    display: flex;
+    justify-content: center;
+    font-family: Rock Salt, cursive;
+    font-size:0.5em;
+}
+
+/*Formatiting Scrolling Vertical Cards*/
+ .xCards
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1em;
+    scrollbar-width: unset;
+    scroll-snap-type:unset;
+    overflow-y: unset;
+    scroll-behavior: unset;
+}
+
+.Cards {
+    overflow: hidden;
+    flex: none;
+    border-radius: 0.5em;
+    border: 0.1em solid white;
+    position: relative;
+    scroll-snap-align: start;
+    padding: 0.5em;
+    width: unset;
+
+  } 
+
+
+/* Projects Page*/
+#Projects p
+{
+    display: none;
+    margin: 0;  
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    background: none;
+    color: black;
+    
+}
+
+#Projects figure
+{
+    position: static;
+    width: 100%;
+}
+
+#Projects img{
+    width: 25rem;
+}
+
+    /* Formatting of each Project Card */
+#Projects .xCards > article
+{
+    text-align: center;
+    padding: 0.5em;
+    min-width: 30rem;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.811);
+    border: 0.1em solid white;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+#Projects .xCards article h1
+{
+    padding: 0.5em;
+    color: cornflowerblue;
+    align-self: center;
+    font-size: 1.5em;
+    border: 0.1em solid white;
+    border-radius: 1em;
+}
+
+/*Education/Qualifications/Experience/Skills Pages*/
+#Education table, #Qualifications table, #Experience table, #Skills table
+{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 71, 37, 0.9);
+    border: 0.1em solid white;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+#Education table th, #Qualifications table th, #Experience table th, #Skills table th
+{
+    border-bottom: 0.1em solid white;
+    border-radius: 1em;
+    font-size: 1em;
+    color: cornflowerblue;
+}
+
+#Education table td, #Qualifications table td, #Experience table td, #Skills table td
+{
+    border-inline-start: 0.1em solid white;
+    border-bottom: 0.1em solid white;
+    border-radius: 1em;
+}
+
+#Skills table td
+{
+    padding: 0.2em;
+}
+
+#Qualifications table td
+{
+   padding: 0.4em;
+}
+
+#Experience table td
+{
+    padding: 1em;
+}
+
+/* Contact Page*/
+#Contact
+{
+    width: unset;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#Contact ul
+{
+    padding: 0;
+}
+
+#Contact li{
+
+    background-color: rgba(53, 105, 62, 0.865);
+    list-style-type: none;
+    padding: 0.5em;
+    border: 0.1em solid white;
+    border-radius: 1em;
+    margin-top: 0.5em;
+}
+
+#Contact li a{
+    text-decoration: none;
+    color: rgb(100, 223, 237);
+}
+
+
+/* Blog Page */
+#Blog
+{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.25em;
+}
+
+#BlogButtons{
+    margin: 0;
+    list-style-type: none ;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#BlogButtons  li{
+    margin-left: 0.5em;
+    padding: 0.5em;
+    border: 0.1em solid white;
+    border-radius: 0.5em;
+    background-color: rgba(29, 71, 37, 0.9);
+}
+
+#BlogButtons  li a{
+    text-decoration: none;
+    color: white;
+}
+
+    /* Blog Posts */
+.BlogPosts{
+    margin-top: 1em;
+    padding: 0.5em;
+    background-color: rgba(6, 82, 20, 0.888);
+    border-radius: 1em; 
+}
+
+.BlogPosts h2
+{
+    font-family: Rock Salt, cursive;
+    font-size: 0.9em;
+}
+
+.BlogPosts p
+{
+    margin: 0;
+    font-size: 1.1em;
+    background-color: rgba(0, 0, 0, 0.548);
+    border: 0.1em solid white;
+    border-radius: 0.5em;
+}
+
+    /* Blog Post Vertical Scrolling */
+.BlogPage
+{
+    height : 24.5em;
+}
+
+.yCards
+{
+    height: 75%;
+    scrollbar-width: none;
+    scroll-snap-type: y proximity;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.yCards > div {
+    scroll-snap-align: center;
+    flex: none;
+}
+
+/* Blog Menu */
+#Menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Months{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 2em;
+}
+#Months img
+{
+    width: 1.5em;
+}
+
+#MonthMenu{
+    font: 0.5em sans-serif;
+    display: none;
+    z-index: 1030;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25em;
+    list-style-type: none;
+    position: absolute;
+    margin-top: 3em;
+    width: 20%;
+    text-align: center;
+    padding: 0;
+    background-color: rgba(156, 161, 157, 0.75);
+    border-radius: 1em;
+    padding: 0.75em;
+}
+
+#MonthMenu li{
+    text-align: center;
+    background-color: rgba(29, 71, 37, 0.9);
+    padding: 0.25em;
+    border-block: 0.1em solid white;
+}
+
+#MonthMenu li a{
+    font-family: Lobster, cursive;
+    font-size: 0.8em;
+    color: white;
+    text-decoration: none;
+}
+
+    /* Blog Post Preview */
+#PreviewTitle{
+    display: none;
+}
+
+#PreviewBlogContent{
+    display: none;
+}
+
+    /* Login Page Form  */
+#Login
+{
+    text-align: center;
+    display: inline-block;
+    margin-inline: 8em;
+    margin-block: 1em;
+}
+
+#Login fieldset
+{
+    border: 0.1em solid white;
+    border-radius: 1em;
+    padding: 1em;
+    background-color: rgba(29, 71, 37, 0.6);
+}
+
+#Login p
+{
+    background: none;
+    margin: 0;
+}
+
+input, textarea{
+    font-family: Lobster, cursive;
+}
+
+input[type="email"], input[type="password"]
+{
+    height : 2em;
+    padding: 0.5em;
+    margin: 0.5em;
+    border: 0.1em solid white;
+    border-radius: 0.5em;
+}
+
+input[type="submit"], input[type="reset"]
+{
+    width: 100%;
+    padding-block: 0.5em;
+    border: 0.1em solid white;
+    border-radius: 0.5em;
+    background-color: rgba(29, 71, 37, 0.9);
+    color: white;
+    font-size: 1em;
+}
+/* Add Blog Post Page Form */
+
+input[type="text"], textarea
+{
+    width: 90%;
+    padding: 0.5em;
+    margin: 0.5em;
+    border: 0.1em solid white;
+    border-radius: 0.5em;
+}
+
+#AddPost
+{
+    text-align: center;
+    margin-top: 1em;
+    margin-inline: 2em;
+    width: 90%;
+
+}
+
+#AddPost fieldset
+{
+    border: 0.1em solid white;
+    border-radius: 1em;
+    padding: 0.5em;
+    background-color: rgba(29, 71, 37, 0.6);
+}
+
+#AddPost p
+{
+    background: none;
+    margin: 0;
+}
+
+#AddPost input[type="submit"], input[type="reset"]
+{
+    padding-block: 0.25em;
+    width: 25%;
+}

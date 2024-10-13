@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Slackside+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/MainFormat.css">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 501px) and (max-width: 768px)">
+    <link rel="stylesheet" href="css/Mobile.css" media="screen and (max-width: 500px)">
+
+    <script src="js/Nav.js" defer></script>
+    
+</head>
+<body>
+    <div class = "Container">
+        <!-- Navigation -->
+        <div class="Navigation">
+            <div class="MobileNavSymbol" onclick="OpenMenu();">
+                <img src="images/menu-icon.png" alt="Menu">
+            </div>
+            <h1 id="MobileHeader">M. A. Nelson</h1>
+            <img class = "Background" id="NavBG" src="images/Background.png">
+            <nav class = "Content" id = "NavOptions">
+                <ul>
+                    <li onclick="OpenMenu()"><a href="Homepage.html">Home</a></li>
+                    <li onclick="OpenMenu()"><a href="AboutMe.html">About Me</a></li>
+                    <li onclick="OpenMenu()"><a href="http://localhost/Project/Blog.php">Blog</a></li>
+                    <li onclick="OpenMenu()"><a href="Education_Experience_Skills.html#Education">Education</a></li>
+                    <li onclick="OpenMenu()"><a href="Education_Experience_Skills.html#Experience">Experience</a></li>
+                    <li onclick="OpenMenu()"><a href="Education_Experience_Skills.html#Skills">Skills</a></li>
+                    <li onclick="OpenMenu()"><a href="Projects.html">Projects</a></li>
+                    <li onclick="OpenMenu()"><a href="Homepage.html#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main Information -->
+        <section class="MainContent"> 
+            <img class = "Background" src="images/Background.png">
+            <header class="Content">
+                    <h1>Projects</h1>
+            </header>
+
+            <section class = "Content" id="Projects">
+                <p>Scroll left and right to view more projects.</p>
+                <div class ="xCards">
+                    <article class ="Cards">
+                        <h1>Portfolio Website</h1>
+                        <figure>
+                            <img src="images/projects/ProjectPortfolio.png" alt="Portfolio Website">
+                            <figcaption>This portfolio website is one of my projects. Here, I am able to demonstrate my web developments skills
+                                in a visible format. This website demonstrates my combined skills of HTML, CSS, JavaScript and PHP.</figcaption>
+                        </figure>
+                    </article>
+                    <article class ="Cards">
+                        <h1>A-Level Project</h1>
+                        <figure>
+                            <img src="images/projects/ProjectAlevel1.png" alt="A-Level Project">
+                            <figcaption>
+                                This project was an amateur attempt using unity and C#.
+                                The images above show my attempt at a multiple enemy minigames.
+                                Each round the user and one random enemy can attack. This applied OOP programming.
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/projects/ProjectAlevel2.png" alt="A-Level Project">
+                            <figcaption>
+                                These show my attempt at a randomly generated timed maze. This was completed through using a depth search algorithm to create the maze
+                                and having a set end point that the user must reach.
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+            </section>
+
+            <footer>
+                <p><i><small>Copyright &copy; 2024 M. A. Nelson</small></i></p>
+            </footer>
+        </div>
+
+    </div>
+</body>
+</html>
