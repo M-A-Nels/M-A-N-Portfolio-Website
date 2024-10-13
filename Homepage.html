@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Slackside+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/MainFormat.css" >
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 501px) and (max-width: 768px)">
+    <link rel="stylesheet" href="css/Mobile.css" media="screen and (max-width: 500px)">
+
+    <script src="js/Nav.js" defer></script>
+
+</head>
+
+<body>
+    <div class="Container">
+        <!-- Navigation -->
+        <div class="Navigation">
+            <div class="MobileNavSymbol" onclick="OpenMenu();">
+                <img src="images/menu-icon.png" alt="Menu">
+            </div>
+            <h1 id="MobileHeader">M. A. Nelson</h1>
+            <img class = "Background" id="NavBG" src="images/Background.png">
+            <nav class = "Content" id = "NavOptions">
+                <ul>
+                    <li onclick="OpenMenu()"><a href="Homepage.html">Home</a></li>
+                    <li onclick="OpenMenu()"><a href="AboutMe.html">About Me</a></li>
+                    <li onclick="OpenMenu()"><a href="http://localhost/Project/Blog.php">Blog</a></li>
+                    <li onclick="OpenMenu()"><a href="Education_Experience_Skills.html#Education">Education</a></li>
+                    <li onclick="OpenMenu()"><a href="Education_Experience_Skills.html#Experience">Experience</a></li>
+                    <li onclick="OpenMenu()"><a href="Education_Experience_Skills.html#Skills">Skills</a></li>
+                    <li onclick="OpenMenu()"><a href="Projects.html">Projects</a></li>
+                    <li onclick="OpenMenu()"><a href="Homepage.html#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Main Information -->
+        <section class="MainContent"> 
+            <div class = "xCards">
+                <!-- HomePage -->
+                <article id="Home" class ="Cards">
+                    <img class = "Background" src="images/Background.png">
+                    <header class="Content">
+                            <h1>M. A. Nelson</h1>
+                            <img src="images/ScrollR.png" alt="Scroll Right" class = "Right">
+                    </header>
+
+                    <article class="Content">
+                        <p>
+                            Welcome.<br/>This is a portfolio website designed to showcase my web development skills. 
+                            But not only that, it is also a tool to showcase my other attributes.
+                            <br/>Here you can view: basic information about me, my education, achievements and such. 
+                            You can also view some projects I have done, and view blogs posts. 
+                            These are all accessible through the navigation bar on the side.
+                            <small><br>P.s You can scroll right for my contact info or press contact in nav. 
+                                When you see arrows you can scroll</small>
+                        </p>
+                        <figure>
+                            <img src="images/Signature.png" alt="Andy Signature Logo">
+                        </figure>
+                    </article>
+
+                    <footer>
+                        <p><i><small>Copyright &copy; 2024 M. A. Nelson</small></i></p>
+                    </footer>
+                </article>
+                
+                <!-- Contact Page -->
+                <article id = "Contact" class ="Cards">
+                    <img class = "Background" src="images/Background.png">
+                    <header class="Content">
+                            <h1>Contact</h1>
+                            <img src="images/ScrollL.png" alt="Scroll Left" class = "Left">
+                    </header>
+
+                    <article class="Content">
+                            <ul>
+                                <li>Email: <a href="mailto:maddieanels88@hotmail.com"> maddieanels88@hotmail.com</a></li>
+                                <li>Linkedin: <a href="https://www.linkedin.com/in/madison-nelson-0433b229a/">Press</a></li>
+                                <li>GitHub: <a href="https://github.com/M-A-Nels">Press</a></li>
+                                <li>CV: <a href="documents/CV - Madison Nelson.pdf">Press</a></li>
+                            </ul>
+                    </article>
+
+                    <footer>
+                        <p><i><small>Copyright &copy; 2024 M. A. Nelson</small></i></p>
+                    </footer>
+                </article>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
