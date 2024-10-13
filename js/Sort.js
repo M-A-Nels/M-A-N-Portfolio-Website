@@ -4,7 +4,7 @@ function updateContentByMonth() {
 
     console.log('Month:', month);
 
-    #display all if no month chosen
+    //display all if no month chosen
     if (month == null) {
         displayAllPosts();
         return;
